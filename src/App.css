@@ -1,0 +1,105 @@
+header {
+  position: sticky;
+  top: 0px;
+  background: beige;
+  box-shadow: 0px 3px 10px rgba(10, 10, 10, 0.6);
+}
+nav {
+  margin: auto;
+  min-height: 7vh;
+  width: 90%;
+}
+
+nav h1,
+nav ul {
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 90vw;
+  padding: 0vw;
+  list-style: none;
+}
+nav ul li {
+  transition: all 1s ease-in-out;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  margin: 0vw 3vw;
+  width: 200px;
+  transition: all 2s;
+}
+section {
+  min-height: 100vh;
+}
+
+.intersection {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intersection h2 {
+  font-size: 5rem;
+  color: white;
+}
+
+.home {
+  background: orange;
+}
+.project {
+  background: red;
+}
+.contact {
+  background: blue;
+}
+
+.mystyle {
+  width: 200px;
+  transition: all 2s;
+  color: black;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  width: 90vw;
+}
+ul li {
+  padding: 6px 0;
+}
+ul li a {
+  position: relative;
+  display: block;
+  padding: 4px 0;
+  color: grey;
+  font-family: Lato, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+ul li a::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s;
+}
+ul li a:hover {
+  color: #95a5a6;
+}
+ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+.mystyle::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
